@@ -60,8 +60,8 @@
 
                 document.querySelector(".city").innerHTML = data.name;
                 document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°F";
-                document.querySelector(".wind").innerHTML = data.wind.speed + "%";
-                document.querySelector(".humidity").innerHTML = data.main.humidity + " MPH";
+                document.querySelector(".wind").innerHTML = data.wind.speed + " MPH";
+                document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
 
                 if(data.weather[0].main == "Clouds") {
                 weatherIcon.src = "images/clouds.png";
